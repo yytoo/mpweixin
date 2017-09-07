@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="projectManager.case" extends="struts-default" >
+        <action name="getwxrequest" class="com.mpwx.action.WxRequestAction" method="getWxRequest">
+            <result name="index">/index.jsp</result>      
+        </action>    
+         <action name="uploadImg" class="com.mpwx.util.UploadImg" method="fileUpload">
+            <result name="index">/index.jsp</result>      
+        </action>    
+         <action name="getexrate" class="com.mpwx.action.WxRequestAction" method="getExRate">
+            <result name="index">/index.jsp</result>      
+        </action>    
+
+
+    </package>  
+
+</struts>    
